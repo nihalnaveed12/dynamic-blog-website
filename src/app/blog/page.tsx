@@ -14,7 +14,7 @@ export default function Blog() {
     return (
       <>
         <div className="pt-20 w-full bg-slate-100">
-            <div className="max-w-screen-xl mx-auto py-10"> 
+            <div className="max-w-screen-xl mx-auto py-10 md:px-2 px-6"> 
                 <h1 className="text-center text-5xl font-semibold">Our Latest Blog</h1>
                 <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 cursor-pointer pt-10">
                    {posts.map((post , index)=>(
