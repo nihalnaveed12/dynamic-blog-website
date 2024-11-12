@@ -50,13 +50,13 @@ export default function Navbar({ bgColor, color }: NavbarPops) {
             {menuOpen ? (
               <X
                 className={`w-8 h-8 ${
-                  scrolledin ? `${color}` : `${color}`
+                  scrolledin ? "text-black" : `${color}`
                 }`}
               />
             ) : (
               <AlignJustify
                 className={`w-8 h-8 ${
-                   scrolledin ? `${color}` : `${color}`
+                   scrolledin ? "text-black" : `${color}`
                 }`}
               />
             )}
@@ -89,13 +89,13 @@ export default function Navbar({ bgColor, color }: NavbarPops) {
         <div className="md:hidden bg-zinc-50 text-black w-full px-4 py-4 ">
           <ul className="flex flex-col gap-4 text-lg">
             <li>
-              <Link href="/blog" onClick={toggleMenu}>
-                Articles
+              <Link href="/" onClick={toggleMenu}>
+                Home
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={toggleMenu}>
-                Contact
+              <Link href="/blog" onClick={toggleMenu}>
+                Articles
               </Link>
             </li>
             <li>
@@ -110,7 +110,7 @@ export default function Navbar({ bgColor, color }: NavbarPops) {
             </li>
             <li>
               <button
-                className="bg-white text-black rounded-xl px-4 py-2 font-semibold w-full text-left"
+                className="bg-zinc-800 hover:bg-zinc-950 text-zinc-50 rounded-xl px-4 py-2 font-semibold w-full text-left"
                 onClick={toggleMenu}
               >
                 Sign up
